@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export default class Headline extends Component {
   constructor(props) {
@@ -17,3 +18,8 @@ export default class Headline extends Component {
     );
   }
 }
+
+Headline.proptype = {
+  header: PropTypes.string,
+  desc: PropTypes.string,
+};
