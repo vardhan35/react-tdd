@@ -20,7 +20,7 @@ class App extends Component {
       emitEvent: this.fetch,
     };
     return (
-      <div>
+      <div data-test="appComponent">
         <Header />
         <Headline header="Hello" desc="hello world" />
         <SharedButton {...configButton} />
