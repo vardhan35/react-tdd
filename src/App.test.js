@@ -28,4 +28,10 @@ describe("App Component", () => {
     const componet = findByTestAttributes(component, "appComponent");
     expect(componet.length).toBe(1);
   });
+  test("should udate state upon calling method_updataState", () => {
+    const classInstatnce = component.instance();
+    classInstatnce.method_updateState();
+    const newState = classInstatnce.state.hideBtn;
+    expect(newState).toBe(true);
+  });
 });
